@@ -20,7 +20,7 @@ class ApplicationManagerFactory implements FactoryInterface
      * Create service
      *
      * @param ServiceLocatorInterface $serviceLocator
-     * @return mixed
+     * @return ApplicationManager
      */
     public function createService(ServiceLocatorInterface $serviceLocator)
     {

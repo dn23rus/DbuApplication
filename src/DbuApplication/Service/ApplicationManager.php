@@ -99,7 +99,7 @@ class ApplicationManager implements ServiceLocatorAwareInterface
      * Init application environment
      *
      * @param array $options
-     * @return $this
+     * @return ApplicationManager
      */
     protected function initEnvironmentOptions(array $options)
     {
@@ -130,10 +130,12 @@ class ApplicationManager implements ServiceLocatorAwareInterface
      * Set service locator
      *
      * @param ServiceLocatorInterface $serviceLocator
+     * @return ApplicationManager
      */
     public function setServiceLocator(ServiceLocatorInterface $serviceLocator)
     {
         $this->serviceLocator = $serviceLocator;
+        return $this;
     }
 
     /**
