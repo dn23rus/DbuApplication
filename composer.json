@@ -1,0 +1,27 @@
+{
+    "name": "dbu/dbu-application",
+    "description": "DbuApplication extends Zend\\Mvc\\Application for primary initialization of application environment and logger service",
+    "license": "MIT",
+    "keywords": [
+        "dbu",
+        "application",
+        "dbu-application",
+        "zf2"
+    ],
+    "authors": [
+        {
+            "name": "Dmitry Buryak",
+            "email": "boss23rus@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "zendframework/zendframework": "2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "DbuApplication\\": "src/"
+        }
+    }
+}
